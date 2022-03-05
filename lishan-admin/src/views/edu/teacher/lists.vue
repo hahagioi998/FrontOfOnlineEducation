@@ -55,7 +55,7 @@
           {{ scope.row.level===1?'高级讲师':'首席讲师' }}
         </template>
       </el-table-column>
-      <el-table-column prop="intro" label="资历" />
+      <el-table-column prop="intro" label="简介" />
       <el-table-column prop="gmtCreate" label="添加时间" width="160"/>
       <el-table-column prop="sort" label="排序" width="60" />
       <el-table-column label="操作" width="200" align="center">

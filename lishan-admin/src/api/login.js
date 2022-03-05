@@ -1,8 +1,7 @@
 import request from '@/utils/request'
 
-// µÇÂ¼
+// ï¿½ï¿½Â¼
 export function login(username, password) {
- // debugger
   return request({
     url: '/admin/acl/login',
     method: 'post',
@@ -13,7 +12,7 @@ export function login(username, password) {
   })
 }
 
-// »ñÈ¡ÓÃ»§ÐÅÏ¢
+// ï¿½ï¿½È¡ï¿½Ã»ï¿½ï¿½ï¿½Ï¢
 export function getInfo(token) {
   return request({
     url: '/admin/acl/index/info',
@@ -22,16 +21,15 @@ export function getInfo(token) {
   })
 }
 
-// µÇ³ö
+// ï¿½Ç³ï¿½
 export function logout() {
-  //debugger
   return request({
     url: '/admin/acl/index/logout',
     method: 'post'
   })
 }
 
-// »ñÈ¡²Ëµ¥È¨ÏÞÊý¾Ý
+// ï¿½ï¿½È¡ï¿½Ëµï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 export function getMenu() {
   return request({
     url: '/admin/acl/index/menu',

@@ -50,7 +50,6 @@ export default {
 
     // 表单初始化
     init() {
-      debugger
       if (this.$route.params && this.$route.params.id) {
         const id = this.$route.params.id
         this.fetchDataById(id)
@@ -76,7 +75,6 @@ export default {
     // 新增讲师
     saveData() {
       roleApi.save(this.role).then(response => {
-        // debugger
         if (response.success) {
           this.$message({
             type: 'success',
@@ -104,7 +102,6 @@ export default {
     // 根据id查询记录
     fetchDataById(id) {
       roleApi.getById(id).then(response => {
-        debugger
         this.role = response.data.item
       })
     }

@@ -221,7 +221,6 @@ export default {
       },
       //更新时间查询
       searchGmtCreate() {      
-        // debugger
         this.buyCountSort = "";       
         this.gmtCreateSort = "1";      
         this.priceSort = "";

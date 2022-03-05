@@ -4,8 +4,9 @@
     <header id="header">
       <section class="container">
         <h1 id="logo">
-          <a href="#" title="谷粒学院">
-            <img src="~/assets/img/logo.png" width="100%" alt="谷粒学院">           </a>
+          <a href="#" title="在线教育">
+            <img src="~/assets/img/logo.png" width="100%" alt="在线教育">
+          </a>
 	        </h1>
         <div class="h-r-nsl">
           <ul class="nav">
@@ -100,11 +101,11 @@
                 <a href="#" title="联系我们" target="_blank">联系我们</a>|
                 <a href="#" title="帮助中心" target="_blank">帮助中心</a>|
                 <a href="#" title="资源下载" target="_blank">资源下载</a>|
-                <span>服务热线：010-56253825(北京) 0755-85293825(深圳)</span>
-                <span>Email：info@atguigu.com</span>               
+                <span>服务热线：17673986074(湖南) 0731-3220820</span>
+                <span>Email：ivself@qq.com</span>               
                 </section>
               <section class="b-f-link mt10">
-                <span>©2018课程版权均归谷粒学院所有 京ICP备17055252号</span>
+                <span>©课程版权均归作者所有 湘ICP备17032252号</span>
               </section>
             </section>           
             </section>

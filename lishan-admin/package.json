@@ -2,7 +2,7 @@
   "name": "lishan-admin",
   "version": "3.8.0",
   "license": "MIT",
-  "description": "谷粒学院后台管理系统",
+  "description": "后台管理系统",
   "author": "lishan <ivself@163.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

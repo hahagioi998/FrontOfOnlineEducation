@@ -79,7 +79,6 @@ export default {
         })
     },
     checkPhone (rule, value, callback) {
-      //debugger
       if (!(/^1[34578]\d{9}$/.test(value))) {
         return callback(new Error('手机号码格式不正确'))
       }

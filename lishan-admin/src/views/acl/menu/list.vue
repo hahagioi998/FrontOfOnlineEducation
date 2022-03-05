@@ -274,7 +274,6 @@ export default {
     },
 
     update(obj) {
-      debugger
       menu.update(obj).then(response => {
         this.dialogFormVisible = false
         this.$message({

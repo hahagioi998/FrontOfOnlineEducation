@@ -53,10 +53,10 @@
       </el-table-column>
       <el-table-column label="操作" width="500" align="center">
         <template slot-scope="scope">
-          <router-link :to="'/teacher/edit/'+scope.row.id">
+          <router-link :to="'/edu/course/info/'+scope.row.id">
             <el-button type="primary" size="mini" icon="el-icon-edit">编辑基本信息</el-button>
           </router-link>
-          <router-link :to="'/teacher/edit/'+scope.row.id">
+          <router-link :to="'/edu/course/chapter/'+scope.row.id">
             <el-button type="primary" size="mini" icon="el-icon-edit">编辑课程大纲</el-button>
           </router-link>
           <el-button type="danger" size="mini" icon="el-icon-delete" 
