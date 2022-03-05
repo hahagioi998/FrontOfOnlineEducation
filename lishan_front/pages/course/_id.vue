@@ -34,10 +34,10 @@
               </span>
             </section>
             <section v-if="isBuy || Number(course.price) === 0" class="c-attr-mt">
-              <a href="#" title="立即观看" class="comm-btn c-btn-3">立即观看</a>
+              <a :href="'player/'+video.videoSourceId" title="立即观看" class="comm-btn c-btn-3">立即观看</a>
             </section>
             <section v-else class="c-attr-mt">
-              <a @click="createOrders()" href="#" title="立即购买" class="comm-btn c-btn-3">立即购买</a>
+              <a @click="createOrders()" :href="'orders/'+orderId" title="立即购买" class="comm-btn c-btn-3">立即购买</a>
             </section>           
             </section>
         </aside>
@@ -167,6 +167,7 @@ import ordersApi from '@/api/order'
 export default {
   asyncData({params,error}){
     return {
+      orderId: '',
       courseId: params.id
     }
   },
@@ -188,6 +189,10 @@ export default {
                 this.chapterVideoList = res.data.data.chapterVideoList,
                 this.courseId = params.id
                 this.isBuy = res.data.data.isBuy
+            }),
+            ordersApi.getOrdersInfo(this.orderId)
+            .then(res =>{
+              this.orderId = res.data.data.orderNo
             })
         },
         //生成订单

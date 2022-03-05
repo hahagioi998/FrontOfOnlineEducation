@@ -54,10 +54,10 @@
       <el-table-column label="操作" width="500" align="center">
         <template slot-scope="scope">
           <router-link :to="'/teacher/edit/'+scope.row.id">
-            <el-button type="primary" size="mini" icon="el-icon-edit">编辑课程基本信息</el-button>
+            <el-button type="primary" size="mini" icon="el-icon-edit">编辑基本信息</el-button>
           </router-link>
           <router-link :to="'/teacher/edit/'+scope.row.id">
-            <el-button type="primary" size="mini" icon="el-icon-edit">编辑课程大纲信息</el-button>
+            <el-button type="primary" size="mini" icon="el-icon-edit">编辑课程大纲</el-button>
           </router-link>
           <el-button type="danger" size="mini" icon="el-icon-delete" 
             @click="removeCourseById(scope.row.id)">删除</el-button>
